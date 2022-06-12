@@ -1,0 +1,299 @@
+.work {
+    .info-section {
+        width: 20%;
+    }
+    .content-area {
+        margin-left: 30%;
+        width: 70%;
+        min-width: 300px;
+        background: white;
+        height: 100%;
+        overflow: hidden;
+        padding: 56px;
+        
+        .work-section {
+            margin-bottom: 56px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin-bottom: 56px;
+            }
+
+            .project-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+
+                .project-box {
+                    position: relative;
+                    padding: 30px;
+                    transition: all 0.5s ease-in-out;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover; 
+                    height: 400px;
+
+                    &:hover {
+                        box-shadow: 0 20px 74px 6px rgba(0,0,0,0.12);
+                    }
+
+                    .grey-bg {
+                        background: #efefef;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        opacity: 0;
+                        // opacity: 1;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+
+
+                        .project-info {
+                            position: relative;
+                            bottom:-70%;
+                            .project-title {
+                                font-size: 1rem;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                            .project-details {
+                                margin-top:25px;
+                                font-size: 1.1rem;
+                                text-transform: capitalize;
+                                ul {
+                                    display: flex;
+                                    justify-content: center;
+                                    li {
+                                        padding: 0 3%;
+                                        a {
+                                            border: 2px $color1 solid;
+                                            text-decoration: none;
+                                            padding: 5px 20px;
+                                            color: $color1;
+                                            text-transform: uppercase;
+                                            font-size:0.9em;
+                                            &:hover {
+                                                color:$color3;
+                                                background:$color1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    h5 {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Mobile
+@media (max-width: 767px) {
+    .work {
+        .menu-icon {
+            top: -3px;
+            right: 20px;
+            .fa-solid {
+                color: #ffffff;
+            }
+        }
+        .info-section {
+            padding: 10px 20px;
+            position: static;
+            .logo {
+                height: 50px;
+                width: 70px;
+                font-size: 1rem;
+            }
+            .info-box {
+                bottom: 15px;
+                h4 {
+                    font-size:1em;
+                    margin: 0.3rem 0;
+                }
+                p {
+                    margin: 0.2rem 0 1rem;
+                }
+            }
+        }
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+            height: 70vh;
+            overflow-y: scroll;
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .img-container {
+                padding: 56px 20px 0;
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+
+                .primary-btn, .ghost-btn {
+                    margin-bottom: 20px;
+                    min-width: 165px;
+                }
+            }
+            .scroll-section {
+                .work-section {
+                    .project-section {
+                        .project-box {
+                            .grey-bg {
+                                top:70%;
+                                opacity:1;
+                                .project-info {
+                                    bottom:-20%;
+                                }
+                                &:hover {
+                                    opacity:1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .work {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                display: block;
+                width:90%;
+                height: auto;
+                top: 50px;
+                margin: auto;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                    -webkit-box-shadow: 3px 3px 74px 1px rgba(0,0,0,0.34);
+                    -moz-box-shadow: 3px 3px 74px 1px rgba(0,0,0,0.34);
+                    box-shadow: 3px 3px 74px 1px rgba(0,0,0,0.34);
+                }
+            }
+            .profile-section {
+                width: 90%;
+                float: right;
+                padding: 15% 10px 0;
+            }
+
+            .scroll-section {
+                .work-section {
+                    .project-section {
+                        .project-box {
+                            .grey-bg {
+                                top:70%;
+                                opacity: 1;
+                                .project-info {
+                                    bottom:-20%;
+                                }
+                                &:hover {
+                                    opacity:1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info-section {
+            padding: 25px;
+        }
+    }
+}
+
+// Laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+    .work {
+        .content-area {
+            margin-left: 32%;
+            width:68%;
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20% 20px 0;
+                max-width: 800px;
+
+                .primary-btn, .ghost-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+// Extra Large
+@media (min-width: 1200px) {
+
+    .work {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+
+                .user-img {
+                    // position: static;
+                    // width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20% 60px 0;
+                max-width: 800px;
+                // padding: 20% 20px 0;
+            }
+        }
+    }
+}

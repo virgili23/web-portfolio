@@ -1,0 +1,51 @@
+.logo {
+    text-transform: uppercase;
+    border: 5px solid #ffffff;
+    height: 130px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    color: #ffffff;
+    line-height: 0;
+}
+
+.info-section {
+    padding: 54px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    .info-box {
+        position: absolute;
+        bottom: 60px;
+        h4 {
+            font-size: 1.2em;
+            color: $color3;
+            margin: 0.7rem 0;
+        }
+        p {
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: $color3;
+            margin: 0.2rem 0 1.6rem;
+        }
+        .icon-section {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                padding: 0 10px;
+                &:hover {
+                    color: $color2;
+                }
+
+                &:first-child {
+                    padding: 0 10px 0 0;
+                }
+            }
+        }
+    }
+}
