@@ -10,24 +10,18 @@
         width: 65%;
         background: white;
         height: 100%;
-
-        // padding: 0 0 0 25%;
         .img-container {
             display: inline-block;
             width: 30%;
             position: relative;
             height: 100%;
-            // float: left;
-
             .user-img {
                 position: absolute;
-                // top: 56px;
                 top: 130px;
                 left: -240px;
                 width: 500px;
-                // height: calc(100% - 112px);
                 height: 600px;
-                background: url("https://i.imgur.com/EljtZZ9.jpg") no-repeat center center; 
+                background: url("/img/headshot-medium.jpg") no-repeat center center; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
