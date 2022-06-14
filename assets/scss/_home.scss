@@ -181,6 +181,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .home {
         .content-area {
+            overflow-y: scroll;
             .img-container {
                 padding: 56px 20px 0;
                 display: block;
