@@ -104,6 +104,7 @@
 // Mobile
 @media (max-width: 767px) {
     .home {
+        height: 97%;
         .menu-icon {
             position:absolute;
             top: -3px;
@@ -172,6 +173,16 @@
         }
         .footer-mobile {
             display: block;
+        }
+    }
+}
+
+// Mobile Landscape
+@media screen and (orientation: landscape) { 
+
+    .info-section {
+        .info-box {
+            bottom: 10px;
         }
     }
 }
