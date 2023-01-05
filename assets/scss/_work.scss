@@ -38,7 +38,8 @@
                     }
 
                     .grey-bg {
-                        background: #efefef;
+                        // background: #efefef;
+                        background: $color2;
                         position: absolute;
                         top: 0;
                         bottom: 0;
@@ -57,12 +58,14 @@
                             position: relative;
                             bottom:-70%;
                             .project-title {
+                                color: $color3;
                                 font-size: 1rem;
                                 text-transform: uppercase;
                                 font-weight: 600;
                                 text-align: center;
                             }
                             .project-desc {
+                                color: $color3;
                                 margin-top:10px;
                                 text-align: center;
                                 font-size: 0.8em;
@@ -77,14 +80,17 @@
                                     li {
                                         padding: 0 3%;
                                         a {
-                                            border: 2px $color1 solid;
+                                            // border: 2px $color1 solid;
+                                            border-radius: 22px;
                                             text-decoration: none;
-                                            padding: 5px 20px;
-                                            color: $color1;
+                                            padding: 5px 25px;
                                             text-transform: uppercase;
-                                            font-size:0.8em;
-                                            letter-spacing: 2px;
-                                            &:hover {
+                                            font-size:0.7em;
+                                            font-weight: 500;
+                                            letter-spacing: 1px;
+                                            color: $color1;
+                                            background: $color3;
+                                            &:hover, &:focus {
                                                 color:$color3;
                                                 background:$color1;
                                             }
